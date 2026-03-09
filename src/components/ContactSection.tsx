@@ -13,7 +13,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message envoyé avec succès !");
+    toast.success("Message sent successfully!");
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -33,14 +33,13 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <p className="text-sm uppercase tracking-widest text-primary mb-2">Contact</p>
-          <h2 className="section-title">Me contacter</h2>
+          <h2 className="section-title">Get in touch</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            N'hésitez pas à me contacter pour toute question ou opportunité.
+            Feel free to reach out for any questions or opportunities.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* Social links */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -66,7 +65,6 @@ const ContactSection = () => {
             ))}
           </motion.div>
 
-          {/* Form */}
           <motion.form
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -75,7 +73,7 @@ const ContactSection = () => {
             className="glass-card p-6 space-y-4"
           >
             <Input
-              placeholder="Votre nom"
+              placeholder="Your name"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               required
@@ -83,14 +81,14 @@ const ContactSection = () => {
             />
             <Input
               type="email"
-              placeholder="Votre email"
+              placeholder="Your email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
               className="bg-secondary/50 border-border/50"
             />
             <Textarea
-              placeholder="Votre message"
+              placeholder="Your message"
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               required
@@ -99,7 +97,7 @@ const ContactSection = () => {
             />
             <Button variant="gradient" className="w-full" type="submit">
               <Send size={16} />
-              Envoyer
+              Send
             </Button>
           </motion.form>
         </div>
