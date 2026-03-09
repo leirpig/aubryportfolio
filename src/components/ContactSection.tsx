@@ -18,7 +18,7 @@ const ContactSection = () => {
   };
 
   const socials = [
-    { icon: Mail, label: "Email", value: "anthony.aubry@email.com", href: "mailto:anthony.aubry@email.com" },
+    { icon: Mail, label: "Email", value: "anthonyaubrysh@gmail.com", href: "mailto:anthonyaubrysh@gmail.com" },
     { icon: Github, label: "GitHub", value: "github.com/anthonyaubry", href: "https://github.com" },
     { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/anthonyaubry", href: "https://linkedin.com" },
   ];
