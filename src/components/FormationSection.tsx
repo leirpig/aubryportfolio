@@ -2,12 +2,12 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { GraduationCap, Calendar, MapPin, CheckCircle } from "lucide-react";
 
-const skills = [
-  "Web and mobile application development",
-  "Database management and administration",
-  "Network configuration and maintenance",
-  "IT service support and deployment",
-  "Cybersecurity and data protection",
+const competences = [
+  "Développement d'applications web et mobiles",
+  "Gestion et administration de bases de données",
+  "Configuration et maintenance de réseaux",
+  "Support et mise à disposition de services informatiques",
+  "Cybersécurité et protection des données",
 ];
 
 const FormationSection = () => {
@@ -15,7 +15,7 @@ const FormationSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="education" className="relative">
+    <section id="formation" className="relative">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,8 +23,8 @@ const FormationSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-primary mb-2">Background</p>
-          <h2 className="section-title">Education</h2>
+          <p className="text-sm uppercase tracking-widest text-primary mb-2">Parcours</p>
+          <h2 className="section-title">Formation</h2>
         </motion.div>
 
         <motion.div
@@ -39,14 +39,14 @@ const FormationSection = () => {
             </div>
             <div>
               <h3 className="font-display font-bold text-xl">BTS SIO</h3>
-              <p className="text-muted-foreground">IT Services for Organizations</p>
+              <p className="text-muted-foreground">Services Informatiques aux Organisations</p>
             </div>
           </div>
 
           <div className="flex flex-wrap gap-4 mb-6 text-sm text-muted-foreground">
             <span className="flex items-center gap-1.5">
               <MapPin size={14} className="text-primary" />
-              [School Name]
+              [Nom de l'établissement]
             </span>
             <span className="flex items-center gap-1.5">
               <Calendar size={14} className="text-primary" />
@@ -55,9 +55,9 @@ const FormationSection = () => {
           </div>
 
           <div className="border-t border-border/50 pt-6">
-            <h4 className="font-display font-semibold mb-4">Skills acquired</h4>
+            <h4 className="font-display font-semibold mb-4">Compétences acquises</h4>
             <ul className="space-y-3">
-              {skills.map((c, i) => (
+              {competences.map((c, i) => (
                 <motion.li
                   key={c}
                   initial={{ opacity: 0, x: -20 }}

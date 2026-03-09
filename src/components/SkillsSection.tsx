@@ -1,11 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code, Database, Globe, Monitor, Terminal, Wrench } from "lucide-react";
+import { Code, Database, Globe, Languages, Monitor, Terminal, Wrench } from "lucide-react";
 
 const categories = [
   {
     icon: Globe,
-    title: "Web Development",
+    title: "Développement Web",
     skills: [
       { name: "HTML / CSS", level: 85 },
       { name: "JavaScript", level: 70 },
@@ -13,7 +13,7 @@ const categories = [
   },
   {
     icon: Code,
-    title: "Programming",
+    title: "Programmation",
     skills: [
       { name: "Python", level: 75 },
       { name: "Java", level: 70 },
@@ -22,33 +22,33 @@ const categories = [
   },
   {
     icon: Database,
-    title: "Databases",
+    title: "Bases de données",
     skills: [
       { name: "SQL / MySQL", level: 80 },
     ],
   },
   {
     icon: Monitor,
-    title: "Networks & Systems",
+    title: "Réseaux & Systèmes",
     skills: [
-      { name: "Network Administration", level: 60 },
+      { name: "Administration réseau", level: 60 },
       { name: "Linux", level: 65 },
     ],
   },
   {
     icon: Wrench,
-    title: "Tools",
+    title: "Outils",
     skills: [
       { name: "Git / GitHub", level: 75 },
       { name: "VS Code", level: 90 },
     ],
   },
   {
-    icon: Terminal,
-    title: "Other",
+    icon: Languages,
+    title: "Langues & Autres",
     skills: [
-      { name: "Agile Methodology", level: 55 },
-      { name: "Documentation", level: 70 },
+      { name: "Anglais", level: 80 },
+      { name: "Méthodologie Agile", level: 55 },
     ],
   },
 ];
@@ -58,7 +58,7 @@ const SkillsSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="skills" className="relative">
+    <section id="competences" className="relative">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -66,8 +66,8 @@ const SkillsSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-primary mb-2">Expertise</p>
-          <h2 className="section-title">My Skills</h2>
+          <p className="text-sm uppercase tracking-widest text-primary mb-2">Savoir-faire</p>
+          <h2 className="section-title">Mes compétences</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -10,23 +10,23 @@ const AboutSection = () => {
   const items = [
     {
       icon: User,
-      title: "Who am I?",
-      text: "BTS SIO student with a keen interest in web development and digital technologies. Curious and motivated, I'm always looking to learn new skills.",
+      title: "Qui suis-je ?",
+      text: "Étudiant en BTS SIO avec un vif intérêt pour le développement web et les technologies numériques. Curieux et motivé, je cherche toujours à apprendre de nouvelles compétences.",
     },
     {
       icon: BookOpen,
-      title: "My background",
-      text: "After high school, I enrolled in BTS SIO. I completed an internship in Ireland in computer repair, then an internship at CNFPT where I was in charge of managing a database.",
+      title: "Mon parcours",
+      text: "Après un baccalauréat, j'ai intégré un BTS SIO. J'ai effectué un stage en Irlande dans la réparation informatique, puis un stage au CNFPT où j'étais en charge de la gestion d'une base de données.",
     },
     {
       icon: Target,
-      title: "My goals",
-      text: "Become a full-stack developer and contribute to innovative projects. I plan to pursue a professional degree or engineering school after my BTS.",
+      title: "Mes objectifs",
+      text: "Devenir développeur full-stack et contribuer à des projets innovants. Je souhaite poursuivre en licence professionnelle ou école d'ingénieur après mon BTS.",
     },
   ];
 
   return (
-    <section id="about" className="relative">
+    <section id="apropos" className="relative">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -34,10 +34,10 @@ const AboutSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-primary mb-2">Introduction</p>
-          <h2 className="section-title">About me</h2>
+          <p className="text-sm uppercase tracking-widest text-primary mb-2">Présentation</p>
+          <h2 className="section-title">À propos de moi</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Discover my background, motivations and ambitions in the field of IT.
+            Découvrez mon parcours, mes motivations et mes ambitions dans le domaine de l'informatique.
           </p>
         </motion.div>
 

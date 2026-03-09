@@ -4,30 +4,30 @@ import { Rss, Lightbulb, TrendingUp, Search } from "lucide-react";
 
 const articles = [
   {
-    title: "The Rise of Generative AI",
-    description: "Language models are transforming software development and IT team productivity.",
-    tag: "Artificial Intelligence",
+    title: "L'essor de l'IA générative",
+    description: "Les modèles de langage transforment le développement logiciel et la productivité des équipes IT.",
+    tag: "Intelligence Artificielle",
   },
   {
-    title: "Cybersecurity in 2025",
-    description: "New threats and best practices to protect IT infrastructure.",
-    tag: "Cybersecurity",
+    title: "Cybersécurité en 2025",
+    description: "Les nouvelles menaces et les bonnes pratiques pour protéger les infrastructures informatiques.",
+    tag: "Cybersécurité",
   },
   {
-    title: "Low-Code & No-Code",
-    description: "These platforms are democratizing development and redefining the role of developers.",
-    tag: "Development",
+    title: "Le low-code et no-code",
+    description: "Ces plateformes démocratisent le développement et redéfinissent le rôle des développeurs.",
+    tag: "Développement",
   },
 ];
 
-const tools = ["Google Alerts", "Feedly", "YouTube", "Tech Blogs", "Reddit", "Twitter/X"];
+const outils = ["Google Alerts", "Feedly", "YouTube", "Blogs spécialisés", "Reddit", "Twitter/X"];
 
 const VeilleSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="techwatch" className="relative">
+    <section id="veille" className="relative">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -35,10 +35,10 @@ const VeilleSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-primary mb-2">Tech Watch</p>
-          <h2 className="section-title">Technology Watch</h2>
+          <p className="text-sm uppercase tracking-widest text-primary mb-2">Veille</p>
+          <h2 className="section-title">Veille technologique</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I monitor trends and innovations in the digital sector to stay at the cutting edge of technology.
+            Je surveille les tendances et innovations du secteur numérique pour rester à la pointe de la technologie.
           </p>
         </motion.div>
 
@@ -52,9 +52,9 @@ const VeilleSection = () => {
             <Lightbulb className="text-primary" size={22} />
           </div>
           <div>
-            <h3 className="font-display font-semibold text-lg mb-1">Main Topic: Artificial Intelligence & Web Development</h3>
+            <h3 className="font-display font-semibold text-lg mb-1">Thème principal : Intelligence Artificielle & Développement Web</h3>
             <p className="text-muted-foreground text-sm">
-              Artificial intelligence is revolutionizing web development with tools like code assistants, automatic UI generation and performance optimization. It's a key topic for any aspiring developer.
+              L'intelligence artificielle révolutionne le développement web avec des outils comme les assistants de code, la génération automatique d'interfaces et l'optimisation des performances. C'est un sujet central pour tout futur développeur.
             </p>
           </div>
         </motion.div>
@@ -86,10 +86,10 @@ const VeilleSection = () => {
           >
             <div className="flex items-center gap-3 mb-4">
               <TrendingUp className="text-primary" size={20} />
-              <h4 className="font-display font-semibold">Trends</h4>
+              <h4 className="font-display font-semibold">Tendances</h4>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              AI, cloud computing, cybersecurity and DevOps continue to reshape the IT landscape. Skills in automation and full-stack development are increasingly in demand by companies.
+              L'IA, le cloud computing, la cybersécurité et le DevOps continuent de transformer le paysage informatique. Les compétences en automatisation et en développement full-stack sont de plus en plus demandées par les entreprises.
             </p>
           </motion.div>
 
@@ -101,10 +101,10 @@ const VeilleSection = () => {
           >
             <div className="flex items-center gap-3 mb-4">
               <Search className="text-primary" size={20} />
-              <h4 className="font-display font-semibold">Monitoring Tools</h4>
+              <h4 className="font-display font-semibold">Outils de veille</h4>
             </div>
             <div className="flex flex-wrap gap-2">
-              {tools.map((o) => (
+              {outils.map((o) => (
                 <span key={o} className="text-xs px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground">
                   {o}
                 </span>

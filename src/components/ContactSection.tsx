@@ -13,7 +13,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent successfully!");
+    toast.success("Message envoyé avec succès !");
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -33,9 +33,9 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <p className="text-sm uppercase tracking-widest text-primary mb-2">Contact</p>
-          <h2 className="section-title">Get in touch</h2>
+          <h2 className="section-title">Me contacter</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Feel free to reach out for any questions or opportunities.
+            N'hésitez pas à me contacter pour toute question ou opportunité.
           </p>
         </motion.div>
 
@@ -73,7 +73,7 @@ const ContactSection = () => {
             className="glass-card p-6 space-y-4"
           >
             <Input
-              placeholder="Your name"
+              placeholder="Votre nom"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               required
@@ -81,14 +81,14 @@ const ContactSection = () => {
             />
             <Input
               type="email"
-              placeholder="Your email"
+              placeholder="Votre email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
               className="bg-secondary/50 border-border/50"
             />
             <Textarea
-              placeholder="Your message"
+              placeholder="Votre message"
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               required
@@ -97,7 +97,7 @@ const ContactSection = () => {
             />
             <Button variant="gradient" className="w-full" type="submit">
               <Send size={16} />
-              Send
+              Envoyer
             </Button>
           </motion.form>
         </div>
