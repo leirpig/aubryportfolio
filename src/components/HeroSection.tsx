@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, FolderOpen, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import forestBg from "@/assets/forest-bg.jpg";
 
 const HeroSection = () => {
   return (
