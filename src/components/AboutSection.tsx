@@ -16,7 +16,7 @@ const AboutSection = () => {
     {
       icon: BookOpen,
       title: "Mon parcours",
-      text: "Après un baccalauréat, j'ai intégré un BTS Services Informatiques aux Organisations pour me spécialiser dans le développement et la gestion des systèmes d'information.",
+      text: "Après un baccalauréat, j'ai intégré un BTS SIO. J'ai effectué un stage en Irlande dans la réparation informatique, puis un stage au CNFPT où j'étais en charge de la gestion d'une base de données.",
     },
     {
       icon: Target,
