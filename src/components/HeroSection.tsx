@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { ArrowDown, FolderOpen, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import forestBg from "@/assets/forest-bg.jpg";
 
 const HeroSection = () => {
   return (
     <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0">
+        <img src={forestBg} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-background/70" />
+      </div>
       <div className="absolute inset-0 hero-glow" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full opacity-20 blur-[120px] bg-primary" />
 
       <div className="section-container text-center relative z-10">
         <motion.div
