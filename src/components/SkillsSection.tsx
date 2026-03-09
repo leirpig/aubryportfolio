@@ -5,7 +5,7 @@ import { Code, Database, Globe, Monitor, Terminal, Wrench } from "lucide-react";
 const categories = [
   {
     icon: Globe,
-    title: "Développement Web",
+    title: "Web Development",
     skills: [
       { name: "HTML / CSS", level: 85 },
       { name: "JavaScript", level: 70 },
@@ -13,7 +13,7 @@ const categories = [
   },
   {
     icon: Code,
-    title: "Programmation",
+    title: "Programming",
     skills: [
       { name: "Python", level: 75 },
       { name: "Java", level: 70 },
@@ -22,22 +22,22 @@ const categories = [
   },
   {
     icon: Database,
-    title: "Bases de données",
+    title: "Databases",
     skills: [
       { name: "SQL / MySQL", level: 80 },
     ],
   },
   {
     icon: Monitor,
-    title: "Réseaux & Systèmes",
+    title: "Networks & Systems",
     skills: [
-      { name: "Administration réseau", level: 60 },
+      { name: "Network Administration", level: 60 },
       { name: "Linux", level: 65 },
     ],
   },
   {
     icon: Wrench,
-    title: "Outils",
+    title: "Tools",
     skills: [
       { name: "Git / GitHub", level: 75 },
       { name: "VS Code", level: 90 },
@@ -45,9 +45,9 @@ const categories = [
   },
   {
     icon: Terminal,
-    title: "Autres",
+    title: "Other",
     skills: [
-      { name: "Méthodologie Agile", level: 55 },
+      { name: "Agile Methodology", level: 55 },
       { name: "Documentation", level: 70 },
     ],
   },
@@ -58,7 +58,7 @@ const SkillsSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="competences" className="relative">
+    <section id="skills" className="relative">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -66,8 +66,8 @@ const SkillsSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-primary mb-2">Savoir-faire</p>
-          <h2 className="section-title">Mes compétences</h2>
+          <p className="text-sm uppercase tracking-widest text-primary mb-2">Expertise</p>
+          <h2 className="section-title">My Skills</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

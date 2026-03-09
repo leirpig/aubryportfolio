@@ -5,28 +5,28 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Site Web Portfolio",
-    description: "Création d'un portfolio personnel en React avec Tailwind CSS pour présenter mes compétences et projets.",
+    title: "Portfolio Website",
+    description: "A personal portfolio built with React and Tailwind CSS to showcase my skills and projects.",
     tech: ["React", "Tailwind CSS", "TypeScript"],
     github: "#",
     demo: "#",
   },
   {
-    title: "Application de Gestion",
-    description: "Application CRUD pour la gestion d'un inventaire avec authentification utilisateur et base de données MySQL.",
+    title: "Management Application",
+    description: "A CRUD application for inventory management with user authentication and MySQL database.",
     tech: ["PHP", "MySQL", "Bootstrap"],
     github: "#",
     demo: "#",
   },
   {
-    title: "Script d'Automatisation",
-    description: "Script Python pour automatiser la sauvegarde de fichiers et la génération de rapports hebdomadaires.",
+    title: "Automation Script",
+    description: "A Python script to automate file backups and generate weekly reports.",
     tech: ["Python", "Bash", "Linux"],
     github: "#",
   },
   {
-    title: "Site E-commerce",
-    description: "Prototype de boutique en ligne avec panier, paiement simulé et gestion des commandes.",
+    title: "E-commerce Website",
+    description: "An online store prototype with shopping cart, simulated payment and order management.",
     tech: ["HTML", "CSS", "JavaScript", "PHP"],
     github: "#",
     demo: "#",
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="projets" className="relative">
+    <section id="projects" className="relative">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -46,8 +46,8 @@ const ProjectsSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-widest text-primary mb-2">Réalisations</p>
-          <h2 className="section-title">Mes projets</h2>
+          <p className="text-sm uppercase tracking-widest text-primary mb-2">Work</p>
+          <h2 className="section-title">My Projects</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -59,7 +59,6 @@ const ProjectsSection = () => {
               transition={{ duration: 0.5, delay: i * 0.12 }}
               className="glass-card p-6 flex flex-col hover:border-primary/30 transition-colors group"
             >
-              {/* Color bar */}
               <div className="h-1 w-16 rounded-full mb-5" style={{ background: "var(--gradient-primary)" }} />
 
               <h3 className="font-display font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
@@ -89,7 +88,7 @@ const ProjectsSection = () => {
                   <Button variant="ghost" size="sm" asChild>
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink size={16} />
-                      Démo
+                      Demo
                     </a>
                   </Button>
                 )}

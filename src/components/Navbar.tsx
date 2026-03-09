@@ -29,7 +29,7 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <a href="#accueil" className="font-display text-xl font-bold gradient-text">
+        <a href="#home" className="font-display text-xl font-bold gradient-text">
           Portfolio
         </a>
 
