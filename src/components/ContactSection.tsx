@@ -18,6 +18,7 @@ const ContactSection = () => {
   };
 
   const socials = [
+    { icon: Phone, label: "Téléphone", value: "06 96 52 24 26", href: "tel:0696522426" },
     { icon: Mail, label: "Email", value: "anthonyaubrysh@gmail.com", href: "mailto:anthonyaubrysh@gmail.com" },
     { icon: Github, label: "GitHub", value: "github.com/anthonyaubry", href: "https://github.com" },
     { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/anthonyaubry", href: "https://linkedin.com" },
