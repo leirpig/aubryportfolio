@@ -18,7 +18,7 @@ const HeroSection = () => {
         >
           {/* Avatar */}
           <div className="w-28 h-28 rounded-full gradient-border bg-secondary flex items-center justify-center text-4xl font-display font-bold text-primary">
-            JS
+            AA
           </div>
 
           <div className="space-y-3">
