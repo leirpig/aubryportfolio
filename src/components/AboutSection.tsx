@@ -21,7 +21,7 @@ const AboutSection = () => {
     {
       icon: Target,
       title: "Mes objectifs",
-      text: "Devenir développeur full-stack et contribuer à des projets innovants. Je souhaite poursuivre en licence professionnelle ou école d'ingénieur après mon BTS.",
+      text: "Devenir chef de pièce d'artillerie dans l'armée. Je suis passionné par le domaine militaire et je souhaite m'engager pour servir mon pays.",
     },
   ];
 
