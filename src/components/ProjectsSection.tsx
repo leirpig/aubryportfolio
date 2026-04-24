@@ -31,6 +31,13 @@ const projects = [
     github: "#",
     demo: "#",
   },
+  {
+    title: "Projet Fredi",
+    description: "Projet de gestion des frais de déplacement et d'indemnisation pour les organisateurs d'événements.",
+    tech: ["PHP", "MySQL", "HTML", "CSS"],
+    github: "#",
+    demo: "#",
+  },
 ];
 
 const ProjectsSection = () => {
