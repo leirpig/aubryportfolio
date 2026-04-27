@@ -41,6 +41,8 @@ const categories = [
     skills: [
       { name: "Git / GitHub", level: 75 },
       { name: "VS Code", level: 90 },
+      { name: "Microsoft Access", level: 70 },
+      { name: "Microsoft Excel", level: 80 },
     ],
   },
   {
