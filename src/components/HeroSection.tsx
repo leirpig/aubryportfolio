@@ -32,7 +32,7 @@ const HeroSection = () => {
               Étudiant en BTS SIO
             </p>
             <p className="max-w-xl mx-auto text-muted-foreground">
-              Passionné par l'informatique, le développement et les nouvelles technologies.
+              Étudiant en informatique, le développement et les nouvelles technologies.
             </p>
           </div>
 
