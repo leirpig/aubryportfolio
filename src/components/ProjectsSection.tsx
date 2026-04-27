@@ -5,36 +5,16 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Site Web Portfolio",
-    description: "Création d'un portfolio personnel en React avec Tailwind CSS pour présenter mes compétences et projets.",
-    tech: ["React", "Tailwind CSS", "TypeScript"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Application de Gestion",
-    description: "Application CRUD pour la gestion d'un inventaire avec authentification utilisateur et base de données MySQL.",
-    tech: ["PHP", "MySQL", "Bootstrap"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Script d'Automatisation",
-    description: "Script Python pour automatiser la sauvegarde de fichiers et la génération de rapports hebdomadaires.",
-    tech: ["Python", "Bash", "Linux"],
-    github: "#",
-  },
-  {
-    title: "Site E-commerce",
-    description: "Prototype de boutique en ligne avec panier, paiement simulé et gestion des commandes.",
-    tech: ["HTML", "CSS", "JavaScript", "PHP"],
-    github: "#",
-    demo: "#",
-  },
-  {
     title: "Projet Fredi",
     description: "Projet de gestion des frais de déplacement et d'indemnisation pour les organisateurs d'événements.",
     tech: ["PHP", "MySQL", "HTML", "CSS"],
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "Boutique Lafleur",
+    description: "Création d'un site e-commerce pour une boutique de fleurs avec catalogue produits et panier en ligne.",
+    tech: ["HTML", "CSS", "JavaScript", "PHP"],
     github: "#",
     demo: "#",
   },
