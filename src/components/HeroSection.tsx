@@ -24,7 +24,7 @@ const HeroSection = () => {
           </div>
 
           <div className="space-y-3">
-            <p className="text-sm uppercase tracking-widest text-primary font-medium">Bienvenue sur mon portfolio</p>
+            <p className="text-sm uppercase tracking-widest text-primary font-medium">Portfolio</p>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold font-display leading-tight">
               Anthony <span className="gradient-text">Aubry</span>
             </h1>
