@@ -7,40 +7,40 @@ const categories = [
     icon: Globe,
     title: "Développement Web",
     skills: [
-      { name: "HTML / CSS", level: 85 },
-      { name: "JavaScript", level: 70 },
+      { name: "HTML / CSS", level: 40 },
+      { name: "JavaScript", level: 40 },
     ],
   },
   {
     icon: Code,
     title: "Programmation",
     skills: [
-      { name: "Python", level: 75 },
-      { name: "Java", level: 70 },
-      { name: "PHP", level: 65 },
+      { name: "Python", level: 40 },
+      { name: "Java", level: 40 },
+      { name: "PHP", level: 40 },
     ],
   },
   {
     icon: Database,
     title: "Bases de données",
     skills: [
-      { name: "SQL / MySQL", level: 80 },
+      { name: "SQL / MySQL", level: 40 },
     ],
   },
   {
     icon: Monitor,
     title: "Réseaux & Systèmes",
     skills: [
-      { name: "Administration réseau", level: 60 },
-      { name: "Linux", level: 65 },
+      { name: "Administration réseau", level: 40 },
+      { name: "Linux", level: 40 },
     ],
   },
   {
     icon: Wrench,
     title: "Outils",
     skills: [
-      { name: "Git / GitHub", level: 75 },
-      { name: "VS Code", level: 90 },
+      { name: "Git / GitHub", level: 40 },
+      { name: "VS Code", level: 40 },
       { name: "Microsoft Access", level: 70 },
       { name: "Microsoft Excel", level: 80 },
     ],
@@ -50,7 +50,7 @@ const categories = [
     title: "Langues & Autres",
     skills: [
       { name: "Anglais", level: 80 },
-      { name: "Méthodologie Agile", level: 55 },
+      { name: "Méthodologie Agile", level: 40 },
     ],
   },
 ];
